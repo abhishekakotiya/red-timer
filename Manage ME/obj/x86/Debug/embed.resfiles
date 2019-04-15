@@ -1,0 +1,13 @@
+App.xbf
+DeviceFamily-Desktop\MainPage.xbf
+DeviceFamily-Desktop\PageSettings.xbf
+DeviceFamily-Desktop\Pomodoro.xbf
+DeviceFamily-Mobile\MainPage.xbf
+DeviceFamily-Mobile\PageSettings.xbf
+DeviceFamily-Mobile\Pomodoro.xbf
+DeviceFamily-Tablet\MainPage.xbf
+DeviceFamily-Tablet\PageSettings.xbf
+DeviceFamily-Tablet\Pomodoro.xbf
+MainPage.xbf
+PageSettings.xbf
+Pomodoro.xbf

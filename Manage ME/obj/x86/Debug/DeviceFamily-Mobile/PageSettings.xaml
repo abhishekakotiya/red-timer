@@ -1,0 +1,49 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Manage_ME"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Foundation="using:Windows.Foundation"
+    x:Class="Manage_ME.PageSettings"
+    mc:Ignorable="d" Background="Black">
+
+    <Grid Margin="0,-6,0,6" Background="#FFACACAC">
+        <Grid x:ConnectionId='20' x:Name="grid" Background="#FFACACAC">
+            <TextBlock x:ConnectionId='21' x:Name="Settings1" TextWrapping="Wrap" FontFamily="Helvetica" FontSize="64" Foreground="#FFF9F0F0" Canvas.Left="75" Canvas.Top="10" Margin="0,63,10,0" VerticalAlignment="Top" HorizontalAlignment="Right">
+				<Run Text="settings"/>
+            </TextBlock>
+            <ScrollViewer Margin="25,191,36,0" d:LayoutOverrides="Width" VerticalScrollBarVisibility="Auto">
+                <StackPanel Orientation="Horizontal" Height="577">
+                    <StackPanel Margin="0,0,0,10.2" Orientation="Vertical">
+                        <TextBlock x:ConnectionId='30' x:Name="textBlock" TextWrapping="Wrap" Text="Session Duration" Foreground="#FF262730" FontSize="21.333" FontFamily="Helvetica" Margin="0,0,36,0" FontWeight="SemiBold" RenderTransformOrigin="0.5,0.5" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                            <TextBlock.RenderTransform>
+                                <CompositeTransform/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+
+                        <Slider x:ConnectionId='31' x:Name="ws" Value="25" Maximum="90" Minimum="1" Foreground="Black" Background="#66FFFFFF" Height="60"/>
+                        <TextBlock x:ConnectionId='32' x:Name="textBlock_Copy1" TextWrapping="Wrap" Text="Break Duration" Foreground="#FF262730" FontSize="21.333" FontFamily="Helvetica" Margin="0,0,36,0" FontWeight="SemiBold" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                        <Slider x:ConnectionId='33' x:Name="shortbreak" Value="5" Maximum="15" Minimum="1" Background="#66FFFFFF" Foreground="Black" d:LayoutOverrides="HorizontalAlignment" Height="60"/>
+                        <TextBlock x:ConnectionId='34' x:Name="textBlock_Copy" TextWrapping="Wrap" Text="Long Break Duration" Foreground="#FF262730" FontFamily="Helvetica" FontSize="18.667" FontWeight="SemiBold" Height="40"/>
+                        <Slider x:ConnectionId='35' x:Name="longbreak" Height="60"  Value="10" Maximum="30" Minimum="1" VerticalAlignment="Bottom" Background="#66FFFFFF" Foreground="Black"/>
+                        <TextBlock x:ConnectionId='36' x:Name="textBlock_Copy2" TextWrapping="Wrap" Text="Sessions before long break" Foreground="#FF262730" FontSize="18.667" FontFamily="Helvetica" VerticalAlignment="Bottom" FontWeight="SemiBold" Height="40"/>
+                        <Slider x:ConnectionId='37' x:Name="noofws"  Value="4" Maximum="10" Minimum="1" VerticalAlignment="Bottom" Foreground="Black" Background="#66FFFFFF" Height="60"/>
+                        <Button x:ConnectionId='38' x:Name="_default" Content="Set Default" HorizontalAlignment="Left" VerticalAlignment="Bottom"                        Height="50" FontSize="16" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,0,0,0.2" Orientation="Vertical">
+                        <TextBox x:ConnectionId='22' x:Name="ws_textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Value, ElementName=ws}" VerticalAlignment="Top" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="SemiBold" Height="40" FontSize="21.333"/>
+                        <TextBlock x:ConnectionId='23' x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center" Text="min" Foreground="#FF262730" Height="60" FontSize="21.333" Width="67"/>
+                        <TextBox x:ConnectionId='24' x:Name="shortbreak_textBox" HorizontalAlignment="Right" TextAlignment="Center" TextWrapping="Wrap" Text="{Binding Value, ElementName=shortbreak}" Margin="-2,0,0.2,0" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="SemiBold" Height="40" FontSize="21.333" Width="69"/>
+                        <TextBlock x:ConnectionId='25' x:Name="textBlock1_Copy1" TextWrapping="Wrap" TextAlignment="Center" Text="min" Foreground="#FF262730" Margin="0,0,0.2,0" FontSize="21.333" Height="60"/>
+                        <TextBox x:ConnectionId='26' x:Name="longbreak_textBox" TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Value, ElementName=longbreak}" Margin="-2,0,0.2,0" HorizontalAlignment="Right" BorderBrush="{x:Null}" Background="{x:Null}" FontWeight="SemiBold" Height="40" FontSize="21.333" Width="69"/>
+                        <TextBlock x:ConnectionId='27' x:Name="textBlock1_Copy" TextAlignment="Center" TextWrapping="Wrap" Text="min" Foreground="#FF262730" Margin="0,0,0.2,0" RenderTransformOrigin="0.5,0.5" Height="60" FontSize="21.333"/>
+                        <TextBox x:ConnectionId='28' x:Name="noofws_textBox" HorizontalAlignment="Right" TextWrapping="Wrap" Text="{Binding Value, ElementName=noofws}" VerticalAlignment="Bottom" Margin="0,0,0.2,0" TextAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="SemiBold" FontSize="21.333" Height="40"/>
+                        <TextBlock x:ConnectionId='29' x:Name="textBlock1_Copy2" TextAlignment="Center" TextWrapping="Wrap" Text="sessions" VerticalAlignment="Bottom" Foreground="#FF262730" Margin="0,0,-34.8,0" Height="60" FontSize="21.333"/>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
+

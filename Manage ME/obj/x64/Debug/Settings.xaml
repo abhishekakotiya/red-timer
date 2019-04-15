@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Manage_ME.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Manage_ME"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black">
+        <Canvas Margin="10">
+            <Slider x:ConnectionId='1' x:Name="ws" Height="42" Canvas.Top="182" Width="285" Canvas.Left="10" Maximum="90" Minimum="1" Value="25"/>
+            <Slider x:ConnectionId='2' x:Name="shortbreak" Height="36" Canvas.Top="256" Width="285" Canvas.Left="10" Maximum="15" Minimum="1" Value="5"/>
+            <Slider x:ConnectionId='3' x:Name="longbreak" Height="45" Canvas.Top="339" Width="285" Canvas.Left="10"  Maximum="30" Minimum="1" Value="10"/>
+            <TextBlock x:ConnectionId='4' x:Name="Settings1" Height="84" TextWrapping="Wrap" Width="237" FontFamily="Helvetica" FontSize="64" Foreground="White" Canvas.Left="96" Canvas.Top="10">
+            	<Run Text="s"/>
+            	<Run Text="etting"/>
+            	<Run Text="s"/>
+            </TextBlock>
+            <Slider x:ConnectionId='5' x:Name="noofws" Height="44" Canvas.Top="415" Width="285" Canvas.Left="10"  Maximum="10" Minimum="1" Value="4"/>
+            <TextBlock x:ConnectionId='6' x:Name="textBlock" Height="34" TextWrapping="Wrap" Text="Work Session Duration" Canvas.Top="150" Width="230" Foreground="White" Canvas.Left="10" FontSize="18.667" FontFamily="Helvetica"/>
+            <TextBlock x:ConnectionId='7' x:Name="textBlock_Copy" Height="47" TextWrapping="Wrap" Text="Long Break Duration" Canvas.Top="306" Width="230" Foreground="White" Canvas.Left="10" FontFamily="Helvetica" FontSize="18.667"/>
+            <TextBlock x:ConnectionId='8' x:Name="textBlock_Copy1" Height="47" TextWrapping="Wrap" Text="Break Duration" Canvas.Top="224" Width="230" Foreground="White" Canvas.Left="10" FontSize="18.667" FontFamily="Helvetica"/>
+            <TextBlock x:ConnectionId='9' x:Name="textBlock_Copy2" Height="47" TextWrapping="Wrap" Text="Work Sessions before a Long Break" Canvas.Top="384" Width="320" Foreground="White" Canvas.Left="10" FontSize="18.667" FontFamily="Helvetica"/>
+            <TextBlock x:ConnectionId='10' x:Name="textBlock1" Height="60" TextWrapping="Wrap" Canvas.Top="550" Width="240" Foreground="White" FontFamily="Helvetica" Text="About" FontSize="18.667" FontWeight="Bold" Canvas.Left="55"/>
+        </Canvas>
+    </Grid>
+</Page>
+

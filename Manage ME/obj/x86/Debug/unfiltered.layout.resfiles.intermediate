@@ -1,0 +1,20 @@
+WinMetadata\Windows.winmd
+ApplicationInsights.config
+Assets\black_small_square_u25AA_icon_256x256.png
+Assets\Skip.png
+Assets\Start3.png
+App.xbf
+DeviceFamily-Desktop\MainPage.xbf
+DeviceFamily-Desktop\PageSettings.xbf
+DeviceFamily-Desktop\Pomodoro.xbf
+DeviceFamily-Mobile\MainPage.xbf
+DeviceFamily-Mobile\PageSettings.xbf
+DeviceFamily-Mobile\Pomodoro.xbf
+DeviceFamily-Tablet\MainPage.xbf
+DeviceFamily-Tablet\PageSettings.xbf
+DeviceFamily-Tablet\Pomodoro.xbf
+MainPage.xbf
+PageSettings.xbf
+Pomodoro.xbf
+Red Timer.xr.xml
+Properties\Default.rd.xml
